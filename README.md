@@ -31,11 +31,12 @@ Easily confused symbols like (I and l) and (0 and O) are replaced with more dist
 These legibility alternatives also conform to the 2013 DIN recommendation as well.  
 
 ### Support for SF Rounded, SF Mono and New York
+![System Font Design Options][design]
 Use the following method to define the system typeface design in your fonts. To use the SF Rounded, you just need to specify design as .rounded, for New York you need to define design as .serif
 
     with(style: TextStyle, design: UIFontDescriptor.SystemDesign, weight: UIFont.Weight = .regular) -> UIFont
 
-
+[design]: http://thetangible.in/pixels/sfpro/design_font.png
 [playgroundScreen]:http://thetangible.in/pixels/sfpro/playgroundScreen.png
 [monospaced]:http://thetangible.in/pixels/sfpro/monovprop.png  
 [monospacedUsage]:http://thetangible.in/pixels/sfpro/monoprop.png  
