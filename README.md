@@ -36,6 +36,8 @@ Use the following method to define the system typeface design in your fonts. To 
 
     with(style: TextStyle, design: UIFontDescriptor.SystemDesign, weight: UIFont.Weight = .regular) -> UIFont
 
+* This is an iOS 13 only feature, and therefore hasn't yet been updated for the playgrounds file.
+
 [design]: http://thetangible.in/pixels/sfpro/design_font.png
 [playgroundScreen]:http://thetangible.in/pixels/sfpro/playgroundScreen.png
 [monospaced]:http://thetangible.in/pixels/sfpro/monovprop.png  
