@@ -33,7 +33,7 @@ These legibility alternatives also conform to the 2013 DIN recommendation as wel
 ### Support for SF Rounded, SF Mono and New York
 Use the following method to define the system typeface design in your fonts. To use the SF Rounded, you just need to specify design as .rounded, for New York you need to define design as .serif
 
-  with(style: TextStyle, design: UIFontDescriptor.SystemDesign, weight: UIFont.Weight = .regular) -> UIFont
+    with(style: TextStyle, design: UIFontDescriptor.SystemDesign, weight: UIFont.Weight = .regular) -> UIFont
 
 
 [playgroundScreen]:http://thetangible.in/pixels/sfpro/playgroundScreen.png
