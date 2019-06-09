@@ -130,6 +130,20 @@ extension UIFont {
     func boldItalic() -> UIFont {
         return withTraits(.traitBold, .traitItalic)
     }
+    
+    class func with(style: TextStyle, design: UIFontDescriptor.SystemDesign, weight: UIFont.Weight = .regular) -> UIFont {
+        
+        var fontDescriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: style)
+        
+        fontDescriptor = fontDescriptor.addingAttributes([UIFontDescriptor.AttributeName.traits : [UIFontDescriptor.TraitKey.weight : weight]])
+        
+        let designedFontDescripter = fontDescriptor.withDesign(design)
+        let designedFont = UIFont(descriptor: designedFontDescripter ?? fontDescriptor,
+                             size: designedFontDescripter?.pointSize ?? 0)
+        
+        
+        return designedFont
+    }
 
 }
 
